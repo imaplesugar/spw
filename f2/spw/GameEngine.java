@@ -106,6 +106,11 @@ public class GameEngine implements KeyListener, GameReporter{
 		return score;
 	}
 	
+	//Add
+    	public int getHp(){
+        	return hp;
+    	}
+	
 	@Override
 	public void keyPressed(KeyEvent e) {
 		controlVehicle(e);
