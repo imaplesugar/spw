@@ -36,7 +36,8 @@ public class GamePanel extends JPanel {
 	public void updateGameUI(){
         big.clearRect(0, 0, 400, 600);
         big.setColor(Color.WHITE);
-        big.drawString(String.format("GAME OVER !!!"), 150, 300);
+        big.drawString(String.format("GAME OVER !!!"), 150, 285);//Show Game over
+        big.drawString(String.format("SCORE : %d", score), 150, 305);//Show Score
         repaint();
     }
 
