@@ -85,7 +85,7 @@ public class GameEngine implements KeyListener, GameReporter{
 	
 	public void die(){
 		timer.stop();
-		gp.updateGameUI();
+		gp.updateGameUI(score);//Add Show Score
 	}
 	
 	void controlVehicle(KeyEvent e) {
