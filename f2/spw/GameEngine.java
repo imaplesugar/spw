@@ -99,6 +99,13 @@ public class GameEngine implements KeyListener, GameReporter{
 		case KeyEvent.VK_D:
 			difficulty += 0.1;
 			break;
+        case KeyEvent.VK_UP:
+            v.straight(-1);
+            break;
+        case KeyEvent.VK_DOWN:
+            v.straight(1);
+            break;
+
 		}
 	}
 
