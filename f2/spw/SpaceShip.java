@@ -35,5 +35,11 @@ public class SpaceShip extends Sprite{
         if(y > 600 - width)
             y = 600 - width;
     }
+    
+    //Add
+    public void reSize(double difficulity ){
+        this.width += difficulity;
+        this.height += difficulity;
+    }
 
 }

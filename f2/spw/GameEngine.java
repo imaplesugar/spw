@@ -21,6 +21,8 @@ public class GameEngine implements KeyListener, GameReporter{
 	private int hp = 5;//Add Hp
 	private long score = 0;
 	private double difficulty = 0.1;
+    private double plusSize = 0;
+
 	
 	public GameEngine(GamePanel gp, SpaceShip v) {
 		this.gp = gp;
@@ -63,6 +65,11 @@ public class GameEngine implements KeyListener, GameReporter{
 				e_iter.remove();
 				gp.sprites.remove(e);
 				score += 100 ;
+                plusSize = (score/1000) ;//Add
+                if(score%2500 == 0){
+                    System.out.println(plusSize);
+                    v.reSize(plusSize);
+                }
 			}
 		}
 		
