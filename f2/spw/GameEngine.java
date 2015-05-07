@@ -67,7 +67,7 @@ public class GameEngine implements KeyListener, GameReporter{
 				score += 100 ;
                 plusSize = (score/1000) ;//Add
                 if(score%2500 == 0){
-                    System.out.println(plusSize);
+                    //System.out.println(plusSize);
                     v.reSize(plusSize);
                 }
 			}
@@ -103,7 +103,7 @@ public class GameEngine implements KeyListener, GameReporter{
 		case KeyEvent.VK_RIGHT:
 			v.move(1);
 			break;
-		case KeyEvent.VK_D:
+		case KeyEvent.VK_Q:
 			difficulty += 0.1;
 			break;
         case KeyEvent.VK_UP:
@@ -112,6 +112,19 @@ public class GameEngine implements KeyListener, GameReporter{
         case KeyEvent.VK_DOWN:
             v.straight(1);
             break;
+        case KeyEvent.VK_A:
+            v.move(-1);
+            break;
+        case KeyEvent.VK_D:
+            v.move(1);
+            break;
+        case KeyEvent.VK_W:
+            v.straight(-1);
+            break;
+        case KeyEvent.VK_S:
+            v.straight(1);
+            break;
+            
 
 		}
 	}
